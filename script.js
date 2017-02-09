@@ -1,6 +1,5 @@
 // Your JS goes here
 var body = document.getElementsByTagName('body')[0];
-console.log(body);
 for (var i = 0; i < 81; i++) {
   var box = document.createElement('div');
   box.style.width = '11.1%';
@@ -13,7 +12,6 @@ for (var i = 0; i < 81; i++) {
     box.style.backgroundColor = "black";
   }
   body.appendChild(box);
-  console.log();
 
 }
 
@@ -24,5 +22,4 @@ function generateRandomColor(){
   var blu=(Math.floor(Math.random() * 255));
 
   return ("rgb(" + red + "," + grn + "," + blu +")");
-
 }
